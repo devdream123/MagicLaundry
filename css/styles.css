@@ -1,0 +1,134 @@
+body{
+	width:100%;
+	margin: 0 auto;
+	position: relative; 
+}
+nav{
+  background-color: #262626;
+}
+.navbar-brand{
+  font-family: 'Bree Serif', serif;
+  font-size:16px;
+  color:#FFFFFF;
+}
+
+.navbar-brand:hover{
+color:#D1D1D1;
+}
+
+.navbar li a{
+	color:#FFFFFF;
+  font-family: 'Bree Serif', serif;
+  font-size:16px;
+}
+.navbar li a:hover{
+/*	color:#D1D1D1;*/
+	background-color: #40BFFF;
+}
+
+#aboutus {padding-top:6%;padding-bottom:60%;height:500px;color: #262626; background-color: #40BFFF;}
+#service {padding-top:5%;padding-bottom:60%;height:500px;color: #262626; background-color: #FFFFFF;}
+#rate {padding-top:5%;padding-bottom:60%;height:500px;color: #262626; background-color:#40BFFF ;}
+#contact {padding-top:5%;padding-bottom:60%;height:500px;color: #262626; background-color: #FFFFFF;}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+
+.carousel{
+  height: 500px;
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  width:100%;
+}
+/* Carousel Caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%
+  height: 500px;
+}
+
+.carousel-control{
+  height: 500px;
+}
+
+/* SECTIONS */
+h1{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+  font-size:42px;
+  color:#262626;
+
+}
+.star-line{
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 15px auto ;
+}
+
+.img-star{
+  margin:0 auto 40px;
+}
+
+section{
+  font-family: 'Roboto Slab', serif;
+  font-size:16px;
+  color:#262626;
+}
+
+#map{
+  width:400px;
+  height:400px;
+  background:yellow;
+  margin-bottom: 50px;
+}
+
+/*FOOTER*/
+footer{
+  font-family: 'Bree Serif', serif;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  padding:10px;
+  font-size:16px;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+
+/* RESPONSIVE WEBSITE */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  body{
+     width: 100%;
+     background-color: red;
+  }
+  section{
+    width:100%;
+  }
+#aboutus {width: 100px;overflow: hidden;text-overflow: ellipsis;}
+#service {width: 100px;overflow: hidden;text-overflow: ellipsis;}
+#rate {width: 100px;overflow: hidden;text-overflow: ellipsis;}
+#contact {width: 100px;overflow: hidden;text-overflow: ellipsis;}
+
+}
+
+
