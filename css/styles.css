@@ -1,12 +1,17 @@
+/* GENERAL
+-------------------------------------------------- */
 body{
 	width:100%;
 	margin: 0 auto;
 	position: relative; 
 }
+
+/* NAVIGATION BAR
+-------------------------------------------------- */
 nav{
   background-color: #262626;
 }
-.navbar-brand{
+.navbar-inverse .container .navbar-header .navbar-brand{
   font-family: 'Bree Serif', serif;
   font-size:16px;
   color:#FFFFFF;
@@ -16,15 +21,19 @@ nav{
 color:#D1D1D1;
 }
 
-.navbar li a{
+.navbar-inverse .collapse li a{
 	color:#FFFFFF;
   font-family: 'Bree Serif', serif;
   font-size:16px;
 }
-.navbar li a:hover{
-/*	color:#D1D1D1;*/
+.navbar-inverse .collapse  li a:hover{
 	background-color: #40BFFF;
 }
+
+ .nav .active a { 
+  background:#40BFFF!important;
+}
+
 
 #aboutus {padding-top:6%;padding-bottom:60%;height:500px;color: #262626; background-color: #40BFFF;}
 #service {padding-top:5%;padding-bottom:60%;height:500px;color: #262626; background-color: #FFFFFF;}
@@ -36,16 +45,13 @@ color:#D1D1D1;
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-
-
 .carousel{
   height: 500px;
   margin-top: 40px;
   background-color: #FFFFFF;
   width:100%;
 }
-/* Carousel Caption */
+
 .carousel-caption {
   z-index: 10;
 }
@@ -67,7 +73,8 @@ color:#D1D1D1;
   height: 500px;
 }
 
-/* SECTIONS */
+/* SECTIONS
+-------------------------------------------------- */
 h1{
   text-align: center;
   font-family: 'Bree Serif', serif;
@@ -92,6 +99,8 @@ section{
   font-family: 'Roboto Slab', serif;
   font-size:16px;
   color:#262626;
+  position: relative;
+
 }
 
 #map{
@@ -101,33 +110,59 @@ section{
   margin-bottom: 50px;
 }
 
-/*FOOTER*/
+/* FOOTER
+-------------------------------------------------- */
 footer{
   font-family: 'Bree Serif', serif;
   background-color: #262626;
   color: #fff;
   text-align: center;
   padding:10px;
-  font-size:16px;
+  font-size:10px;
   position:fixed;
   bottom:0;
   width:100%;
 }
 
-/* RESPONSIVE WEBSITE */
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-  body{
-     width: 100%;
-     background-color: red;
-  }
-  section{
-    width:100%;
-  }
-#aboutus {width: 100px;overflow: hidden;text-overflow: ellipsis;}
-#service {width: 100px;overflow: hidden;text-overflow: ellipsis;}
-#rate {width: 100px;overflow: hidden;text-overflow: ellipsis;}
-#contact {width: 100px;overflow: hidden;text-overflow: ellipsis;}
+/* RESPONSIVENESS
+-------------------------------------------------- */
+@media only screen and (max-width: 790px) {
+
+body{
+  width: 100%;
+  background-color: yellow;
+}
+
+section{
+  width:100%;
+  position: relative;
+  margin: 0 auto;
+  height:700px;
+}
+#aboutus,#contact,#service,#rate{
+  height:700px;
+}
+
+.carousel{
+  margin:0 auto;
+  position: relative;
+  height:300px;
+}
+
+.carousel .item {
+  height: 300px;
+}
+.carousel-inner > .item > img {
+  width: 100%
+  height: 300px;
+}
+
+.carousel-control{
+  height: 300px;
+}
+footer{
+  font-size:10px;
+}
 
 }
 
