@@ -110,6 +110,15 @@ section{
   margin-bottom: 50px;
 }
 
+#contact h2{
+  padding-left:30px;
+  padding-bottom: 30px;
+} 
+
+.contact-info label,p{
+  padding-bottom: 10px;
+}
+
 /* FOOTER
 -------------------------------------------------- */
 footer{
