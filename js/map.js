@@ -3,7 +3,7 @@ $(document).ready(function (){
 	var laundryPos = {lat: -33.902196, lng: 151.179325};
 
     var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 4,
+		zoom: 15,
 	  	center: laundryPos
     });
 
