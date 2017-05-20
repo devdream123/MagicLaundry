@@ -1,0 +1,215 @@
+$font-header:'Bree Serif', serif;
+$size-normal:16px;
+$color-nav:#FFFFFF;
+$color-hover:#40BFFF;
+$background-bar: #262626;
+
+
+/* GENERAL
+-------------------------------------------------- */
+body{
+	width:100%;
+	margin: 0 auto;
+	position: relative; 
+}
+
+/* NAVIGATION BAR
+-------------------------------------------------- */
+.navbar {
+  background: $background-bar;
+  .collapse li a {
+    color: $color-nav;
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    &:hover {
+      background-color: $color-hover;
+    }
+  }
+  .nav .active a {
+    background: $color-hover !important;
+  }
+}
+
+
+#aboutus {
+	padding-top:5%;
+	padding-bottom:50%;
+	max-height:700px;
+	color: #262626; 
+	background-color: #40BFFF;
+	
+	.description-2	{
+		padding-top: 20px;
+	}
+}
+#service {padding-top:5%;padding-bottom:50%;max-height:700px;color: #262626; background-color: #FFFFFF;}
+#rate {padding-top:5%;padding-bottom:50%;max-height:700px;color: #262626; background-color:#40BFFF ;}
+#contact {padding-top:5%;padding-bottom:50%;max-height:700px;color: #262626; background-color: #FFFFFF;}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel {
+  height: 500px;
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 600px;
+  .carousel-inner .carousel-caption {
+    z-index: 10;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+  }
+  .item {
+    height: 600px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 600px;
+  }
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-control {
+  height: 600px;
+}
+
+
+/* SECTIONS
+-------------------------------------------------- */
+
+section {
+	.row{
+	padding-left:50px;
+	padding-right:50px;
+	text-align: justify;
+	}
+	.service-list li{ 
+		text-align: left;
+		padding-top:20px;
+	}
+	
+  h1 {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: 42px;
+    color: #262626;
+  }
+  .star-line {
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 15px auto;
+  }
+  .img-star {
+    margin: 0 auto 40px;
+  }
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #262626;
+  position: relative;
+  
+  #map {
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    margin-bottom: 50px;	
+  }
+  .contact-info h2 {
+    padding-bottom: 10px;
+  }
+}
+
+label, p {
+  padding-bottom: 10px;
+}
+
+
+/* FOOTER
+-------------------------------------------------- */
+footer{
+	font-family: 'Bree Serif', serif;
+	background-color: $background-bar;
+	color: #fff;
+	font-size:10px;
+	text-align: center;
+	width:100%;
+	padding:10px;
+	height:auto;
+	position:relative;
+	bottom:0;
+	margin:0 auto;
+}
+
+/* RESPONSIVENESS
+-------------------------------------------------- */
+
+
+
+/*Tablet & Mobile*/
+
+@media only screen and (max-width: 790px) {
+  body {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    #aboutus,#contact, #service, #rate {
+    max-height:1100px;
+  	}
+	.service-list{ 
+		text-align: left;
+		padding-bottom: 20px;
+	} 
+	.img-store{
+		padding-bottom: 20px;
+	}
+  }
+  
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    height: 300px;
+    .item {
+      height: 300px;
+    }
+    .carousel-inner > .item > img {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  .carousel-control {
+    height: 300px;
+  }
+  section {
+    #map, .contact-info {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  footer {
+    position: absolute;
+    bottom:-3%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
