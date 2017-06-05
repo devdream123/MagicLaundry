@@ -29,6 +29,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -38,7 +48,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/styles.css",
-		"oF": 2,
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -116,6 +126,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/PriceList.jpg": {
+		"ft": 16384,
+		"iS": 63927,
+		"oA": 0,
+		"oAP": "\/img\/PriceList.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/Services_alternation.jpg": {
 		"ft": 16384,
 		"iS": 64283,
@@ -156,6 +176,30 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/js\/effect.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/effect-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/map.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/map-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/js\/smooth-scroll.js": {
 		"ft": 64,
@@ -205,6 +249,30 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/PriceList copy.pages": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/PriceList copy.pages",
+		"oF": 0
+		},
+	"\/PriceList.pages": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/PriceList.pages",
+		"oF": 0
+		},
+	"\/PriceList.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/PriceList.pdf",
+		"oF": 0
+		},
+	"\/PriceList.xcf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/PriceList.xcf",
+		"oF": 0
 		}
 	},
 "hooks": [

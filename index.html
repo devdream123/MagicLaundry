@@ -13,6 +13,7 @@
     <script src="js/vendors/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/effect.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel ="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Slab" rel="stylesheet">
@@ -33,10 +34,10 @@
 
         <div class="collapse navbar-collapse" id="navbar" >
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><li><a href="#aboutus">ABOUT US</a></li>
-            <li><a href="#service">SERVICES</a></li>
-            <li><a href="#rate">RATES</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
+            <li class="active"><li><a data-toggle="collapse" data-target=".navbar-collapse.in"  href="#aboutus">ABOUT US</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse.in"  href="#service">SERVICES</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse.in"  href="#rate">RATES</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse.in"  href="#contact">CONTACT US</a></li>
           </ul>
        </div><!--/.nav-collapse -->
       </div>
@@ -100,12 +101,12 @@
 	            	<img src="img/Store.jpg" alt="Store" width= "100%">
 	          	</div>
 	          </div>
-	          <div class ="description col-lg-offset-2">
-	            <p>Laundry Magic has established for 30 years in Sydney, NSW Australia. The Laundry Magic has since grown to providing a diverse range of “no stress” services to a variety of prominent businesses throughout the Australia. </p>
+	          <div class ="description">
+            <p>Laundry Magic has established for 30 years in Sydney, NSW Australia. The Laundry Magic has since grown to providing a diverse range of “no stress” services to a variety of prominent businesses throughout the Australia. </p>
 	          <p>Fully aware of the ongoing quality requirements of linen and work wear for many of the industrial, entertainment, catering, hotel and tourism industries, Onyx Commercial Laundry continue to expand and develop new markets and new territories aiming to provide a “one stop” service. </p>	    	    <p> Our valued clients have been responsible for this by means of “word of mouth” on our prompt service and more so the quality and very economical pricing of our service.</p>
-		          <p>Laundry Magic will continue to build upon our history and experience in the industry to provide a fast and effective service that will meet and exceed our client’s expectations.</p>
+	          <p>Laundry Magic will continue to build upon our history and experience in the industry to provide a fast and effective service that will meet and exceed our client’s expectations.</p>
 	          </div>   	
-	    </div>
+	     </div>
       </div>
     </section>
     <!--Serivces section-->
@@ -122,9 +123,9 @@
           <div class ="col-md-6 col-sm-6 ">
 	        <ul class = "service-list">
 	            <h2>We specialise in </h2>
-				<li>Dry cleaning</li>
-				<li>Professional Alteration</li>
-				<li>Modern Machinery</li>
+      				<li>Dry cleaning</li>
+      				<li>Professional Alteration</li>
+      				<li>Modern Machinery</li>
             </ul>
           </div>
           <div class ="col-md-6 col-sm-6 ">
@@ -147,13 +148,16 @@
           </div>
         </div>
         <div class="row">
-          <div class ="col-lg-4 col-lg-offset-2">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <div class =" col-md-6 col-sm-6">
+            <div class = "img-responsive rate-image">
+             <img src="img/PriceList.jpg" class="PriceList" alt="Price List" width=100%>
+            </div>
           </div>
-          <div class ="col-lg-4">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+           <div class ="col-md-6 col-sm-6">
+                 <p>Laundry Magic provide you the best and affortable rate for your services</p>
+            </div>
           </div>
-         </div>
+        </div>
       </div>
     </section>
       <!--Contact Us section-->
@@ -167,18 +171,18 @@
           </div>
         </div>
         <div class="row">
-          <div class ="col-lg-4 col-lg-offset-2 col-md-6 col-sm-4 ">       
+          <div class ="col-md-6 col-sm-6">       
             <ul class = "contact-info">
                 <h2>Where we are?</h2>
                 <label>Address:</label>
-                <p>514 King Street. Newtown. NSW. Australia 2042 </p>
+                <li>514 King Street. Newtown. NSW. Australia 2042 </li>
                 <label>Phone:</label>
-                <p>02 9517 3883</p>
+                <li>02 9517 3883</li>
                 <label>Email:</label>
-                <p>laundrymagiccnt@gmail.com</p>
+                <li>laundrymagiccnt@gmail.com</li>
             </ul>
           </div>
-          <div class ="col-lg-4 col-md-6 col-sm-4">
+          <div class ="col-md-6 col-sm-6">
             <div id="map" ></div>
          </div>
         </div>
