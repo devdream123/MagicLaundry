@@ -126,7 +126,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/PriceList.jpg": {
+	"\/img\/pricelist.jpg": {
 		"ft": 16384,
 		"iS": 63927,
 		"oA": 0,
@@ -143,7 +143,7 @@
 		"oAP": "\/img\/Services_alternation.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/Services_dryclean.jpg": {
@@ -221,7 +221,7 @@
 		},
 	"\/MagicLaundry-desktop.png": {
 		"ft": 32768,
-		"iS": 4797237,
+		"iS": 7438309,
 		"oA": 0,
 		"oAP": "\/MagicLaundry-desktop.png",
 		"oF": 0,
@@ -232,7 +232,7 @@
 		},
 	"\/MagicLaundry-mobile.png": {
 		"ft": 32768,
-		"iS": 2075536,
+		"iS": 4188950,
 		"oA": 0,
 		"oAP": "\/MagicLaundry-mobile.png",
 		"oF": 0,

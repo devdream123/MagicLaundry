@@ -7,16 +7,23 @@ body {
 
 /* NAVIGATION BAR
 -------------------------------------------------- */
-.navbar {
-  background: #262626; }
-  .navbar .collapse li a {
+.navbar, .container {
+  background: #262626;
+  /*Logo*/ }
+  .navbar .collapse li a, .container .collapse li a {
     color: #FFFFFF;
     font-family: 'Bree Serif', serif;
     font-size: 16px; }
-    .navbar .collapse li a:hover {
+    .navbar .collapse li a:hover, .container .collapse li a:hover {
       color: #40BFFF; }
-  .navbar .nav .active a {
+  .navbar .nav .active a, .container .nav .active a {
     background: #40BFFF !important; }
+  .navbar .navbar-header a, .container .navbar-header a {
+    font-family: 'Ceviche One', cursive;
+    font-size: 30px;
+    color: #40BFFF; }
+    .navbar .navbar-header a:hover, .container .navbar-header a:hover {
+      color: #40BFFF; }
 
 #aboutus {
   padding-top: 5%;
@@ -87,8 +94,7 @@ section {
   font-size: 16px;
   color: #262626;
   position: relative;
-  /*Rate Section Styling*/
-  /* Download Button  */ }
+  /*Rate Section Styling*/ }
   section .row {
     padding-left: 70px;
     padding-right: 70px;
@@ -98,6 +104,9 @@ section {
     padding-top: 20px;
     list-style-type: square;
     font-weight: bold; }
+  section .service .alteration-img-container, section .service .dryclean-img-container, section .row .alteration-img-container, section .row .dryclean-img-container {
+    text-align: center;
+    padding-top: 30px; }
   section h1 {
     text-align: center;
     font-family: 'Bree Serif', serif;
@@ -112,40 +121,41 @@ section {
     margin: 15px auto; }
   section .img-star {
     margin: 0 auto 40px; }
-  section .rate h2, section .row h2 {
-    font-size: 25px;
-    font-weight: bold; }
-  section .rate .rate-list li, section .row .rate-list li {
-    padding-top: 20px;
-    list-style-type: square; }
-  section .rate .contact-line, section .row .contact-line {
-    padding-top: 40px; }
-  section .button-download-container {
-    padding-top: 40px;
-    padding-left: 60px; }
-    section .button-download-container .download-button {
-      width: 50%;
-      height: 50px;
-      list-style: none;
-      background-color: #262626; }
-      section .button-download-container .download-button:hover {
-        background-color: #FFFFFF; }
-        section .button-download-container .download-button:hover a {
-          color: #000000; }
-      section .button-download-container .download-button a {
-        text-decoration: none;
-        color: #FFFFFF; }
-  section .label-download {
-    padding-top: 40px;
-    font-size: 15px; }
-  section #map {
+  section #rate, section .row {
+    /* Download Button  */ }
+    section #rate h2, section .row h2 {
+      font-size: 25px;
+      font-weight: bold; }
+    section #rate .rate-list li, section .row .rate-list li {
+      padding-top: 20px;
+      list-style-type: square; }
+    section #rate .contact-line, section .row .contact-line {
+      padding-top: 40px; }
+    section #rate .button-download-container, section .row .button-download-container {
+      padding-top: 40px; }
+      section #rate .button-download-container .download-button, section .row .button-download-container .download-button {
+        width: 50%;
+        height: 50px;
+        list-style: none;
+        background-color: #262626; }
+        section #rate .button-download-container .download-button:hover, section .row .button-download-container .download-button:hover {
+          background-color: #FFFFFF; }
+          section #rate .button-download-container .download-button:hover a, section .row .button-download-container .download-button:hover a {
+            color: #000000; }
+        section #rate .button-download-container .download-button a, section .row .button-download-container .download-button a {
+          text-decoration: none;
+          color: #FFFFFF; }
+    section #rate .label-download, section .row .label-download {
+      padding-top: 40px;
+      font-size: 15px; }
+  section #contact #map, section .row #map {
     width: 100%;
     height: 400px;
     background: yellow;
     margin-bottom: 50px; }
-  section .contact-info h2 {
+  section #contact .contact-info h2, section .row .contact-info h2 {
     padding-bottom: 10px; }
-  section .contact-info li {
+  section #contact .contact-info li, section .row .contact-info li {
     list-style: none;
     padding-bottom: 10px; }
 
@@ -181,6 +191,16 @@ footer {
       padding-bottom: 20px; }
     section .img-store {
       padding-bottom: 20px; }
+    section #rate .button-download-container, section .row .button-download-container {
+      text-align: center; }
+      section #rate .button-download-container .download-button, section .row .button-download-container .download-button {
+        width: 100%; }
+    section #contact .contact-info, section .row .contact-info {
+      margin: 0 auto;
+      width: 100%; }
+    section #contact #map, section .row #map {
+      margin-top: 50px;
+      width: 100%; }
   .carousel {
     margin: 0 auto;
     position: relative;
@@ -196,9 +216,6 @@ footer {
       top: 43%; }
   .carousel-control {
     height: 500px; }
-  section #map, section .contact-info {
-    margin: 0 auto;
-    width: 100%; }
   footer {
     position: absolute;
     bottom: -3%; } }
