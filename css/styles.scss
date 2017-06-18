@@ -9,7 +9,7 @@ body{
 
 /* NAVIGATION BAR
 -------------------------------------------------- */
-.navbar {
+.navbar, .container {
   background: #262626;
   .collapse li a {
     color: #FFFFFF;
@@ -21,6 +21,17 @@ body{
   }
   .nav .active a {
     background: #40BFFF !important;
+  }
+  /*Logo*/
+  .navbar-header {
+      a{
+        font-family: 'Ceviche One', cursive;
+        font-size: 30px;
+        color: #40BFFF;
+        &:hover {
+          color: #40BFFF;
+      }
+    }
   }
 }
 
@@ -99,6 +110,10 @@ section {
             font-weight: bold;
         }
       }
+      .alteration-img-container, .dryclean-img-container{
+        text-align: center;
+        padding-top: 30px;
+      }
   }
 
   h1 {
@@ -125,7 +140,7 @@ section {
   position: relative;
 
  /*Rate Section Styling*/ 
-.rate,.row{
+#rate,.row{
   h2{
     font-size: 25px;
     font-weight: bold;
@@ -139,12 +154,10 @@ section {
   .contact-line {
     padding-top: 40px;
   }
-}
 
-/* Download Button  */
+  /* Download Button  */
   .button-download-container {
     padding-top:40px;
-    padding-left: 60px;
     .download-button {
       width:50%;
       height:50px;
@@ -166,23 +179,28 @@ section {
     padding-top:40px;
     font-size: 15px;
   }
+}
 
-  #map {
-    width: 100%;
-    height: 400px;
-    background: yellow;
-    margin-bottom: 50px;	
-  }
-  .contact-info {
-     h2 {
-      padding-bottom: 10px;
-      }
-      li{
-        list-style: none;
-          padding-bottom: 10px;
+  #contact,.row{
 
-      }
+    #map {
+      width: 100%;
+      height: 400px;
+      background: yellow;
+      margin-bottom: 50px;  
+    }
+    .contact-info {
+       h2 {
+        padding-bottom: 10px;
+        }
+        li{
+          list-style: none;
+            padding-bottom: 10px;
+
+        }
+    }
   }
+
 }
 
 
@@ -218,18 +236,38 @@ footer{
     width: 100%;
     position: relative;
     margin: 0 auto;
-    #aboutus,#contact, #service, #rate {
+    #aboutus, #contact, #service, #rate {
     max-height:1800px;
   	}
-	.service-list{ 
-		text-align: left;
-		padding-bottom: 20px;
-	} 
-	.img-store{
-		padding-bottom: 20px;
-	}
-  }
+  	.service-list{ 
+  		text-align: left;
+  		padding-bottom: 20px;
+  	} 
+  	.img-store{
+  		padding-bottom: 20px;
+  	}
+    #rate,.row{
+        .button-download-container {
+          text-align: center;
+          .download-button {
+            width:100%;
+          }
+        }
+    }
+    #contact,.row{  
+      .contact-info {
+        margin: 0 auto;
+        width: 100%;
+      }
+      #map{
+        margin-top: 50px;
+        width: 100%;
+      }
+    }
   
+}
+
+
   .carousel {
     margin: 0 auto;
     position: relative;
@@ -250,12 +288,7 @@ footer{
   .carousel-control {
     height: 500px;
   }
-  section {
-    #map, .contact-info {
-      margin: 0 auto;
-      width: 100%;
-    }
-  }
+ 
   footer {
     position: absolute;
     bottom:-3%;
