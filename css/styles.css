@@ -155,11 +155,10 @@ section {
     height: 400px;
     background: yellow;
     margin-bottom: 50px; }
-  section #contact .contact-info h2, section .row .contact-info h2 {
-    padding-bottom: 10px; }
-  section #contact .contact-info li, section .row .contact-info li {
-    list-style: none;
-    padding-bottom: 10px; }
+  section #contact .contact-info, section .row .contact-info {
+    text-align: center; }
+    section #contact .contact-info h2, section .row .contact-info h2 {
+      padding-bottom: 10px; }
 
 /* FOOTER
 -------------------------------------------------- */
