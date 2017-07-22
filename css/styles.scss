@@ -95,24 +95,24 @@ body{
 
 section {
 	.row{
-	padding-left:70px;
-	padding-right:70px;
+	padding-left:50px;
+	padding-right:50px;
 	text-align: justify;
 	}
 
   .service, .row{
       .service-list{ 
-
-        li{ 
-            text-align: left;
-            padding-top:20px;
-            list-style-type: square;
-            font-weight: bold;
+        text-align:justify;
+        label{ 
+          text-align: left;
+          padding-top: 20px;
+          padding-bottom:10px;
+          font-weight: bold;
+          font-size:20px;
         }
       }
-      .alteration-img-container, .dryclean-img-container{
-        text-align: center;
-        padding-top: 30px;
+      .section-2{
+        padding-top:20px;
       }
   }
 
@@ -147,17 +147,17 @@ section {
   }
   .rate-list {
       li{
-        padding-top:20px;
+        padding-top:15px;
         list-style-type: square;
       }
   }
   .contact-line {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   /* Download Button  */
   .button-download-container {
-    padding-top:40px;
+    padding-top:20px;
     .download-button {
       width:50%;
       height:50px;
@@ -228,7 +228,7 @@ footer{
 
 /*Tablet & Mobile*/
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 790px) and (min-device-width : 320px) {
   body {
     width: 100%;
   }
@@ -239,10 +239,7 @@ footer{
     #aboutus, #contact, #service, #rate {
     max-height:1800px;
   	}
-  	.service-list{ 
-  		text-align: left;
-  		padding-bottom: 20px;
-  	} 
+
   	.img-store{
   		padding-bottom: 20px;
   	}

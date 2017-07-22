@@ -96,17 +96,19 @@ section {
   position: relative;
   /*Rate Section Styling*/ }
   section .row {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: justify; }
-  section .service .service-list li, section .row .service-list li {
-    text-align: left;
-    padding-top: 20px;
-    list-style-type: square;
-    font-weight: bold; }
-  section .service .alteration-img-container, section .service .dryclean-img-container, section .row .alteration-img-container, section .row .dryclean-img-container {
-    text-align: center;
-    padding-top: 30px; }
+  section .service .service-list, section .row .service-list {
+    text-align: justify; }
+    section .service .service-list label, section .row .service-list label {
+      text-align: left;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 20px; }
+  section .service .section-2, section .row .section-2 {
+    padding-top: 20px; }
   section h1 {
     text-align: center;
     font-family: 'Bree Serif', serif;
@@ -127,12 +129,12 @@ section {
       font-size: 25px;
       font-weight: bold; }
     section #rate .rate-list li, section .row .rate-list li {
-      padding-top: 20px;
+      padding-top: 15px;
       list-style-type: square; }
     section #rate .contact-line, section .row .contact-line {
-      padding-top: 40px; }
+      padding-top: 30px; }
     section #rate .button-download-container, section .row .button-download-container {
-      padding-top: 40px; }
+      padding-top: 20px; }
       section #rate .button-download-container .download-button, section .row .button-download-container .download-button {
         width: 50%;
         height: 50px;
@@ -177,7 +179,7 @@ footer {
 /* RESPONSIVENESS
 -------------------------------------------------- */
 /*Tablet & Mobile*/
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 790px) and (min-device-width: 320px) {
   body {
     width: 100%; }
   section {
@@ -186,9 +188,6 @@ footer {
     margin: 0 auto; }
     section #aboutus, section #contact, section #service, section #rate {
       max-height: 1800px; }
-    section .service-list {
-      text-align: left;
-      padding-bottom: 20px; }
     section .img-store {
       padding-bottom: 20px; }
     section #rate .button-download-container, section .row .button-download-container {
